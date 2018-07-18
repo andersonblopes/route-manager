@@ -11,7 +11,7 @@ public class Cidade {
 
 	public Cidade(String nome) {
 		this.nome = nome;
-		visitado = true;
+		visitado = false;
 		adjacentes = new ArrayList<>();
 	}
 
