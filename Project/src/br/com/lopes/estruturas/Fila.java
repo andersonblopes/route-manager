@@ -1,7 +1,7 @@
 package br.com.lopes.estruturas;
 
-import br.com.lopes.grafocidades.Cidade;
-import br.com.lopes.grafocidades.Mapa;
+import br.com.lopes.grafo.Cidade;
+import br.com.lopes.grafo.Mapa;
 
 public class Fila {
 
@@ -14,6 +14,16 @@ public class Fila {
 	public static void main(String[] args) {
 		Fila fila = new Fila(5);
 		Mapa mapa = new Mapa();
+
+		fila.enfileirar(mapa.getFortaleza());
+		fila.enfileirar(mapa.getEusebio());
+		fila.enfileirar(mapa.getAquiraz());
+
+		System.out.println("Inicio da fila: " + fila.getPrimeiro().getNome());
+
+		fila.desEnfileirar();
+
+		System.out.println("Inicio da fila: " + fila.getPrimeiro().getNome());
 	}
 
 	public Fila(int tamanho) {
@@ -60,6 +70,10 @@ public class Fila {
 
 	private boolean isFilaCheia() {
 		return numeroElementos == tamanho;
+	}
+
+	public int getNumeroElementos() {
+		return numeroElementos;
 	}
 
 }

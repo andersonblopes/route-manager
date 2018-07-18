@@ -1,8 +1,9 @@
-package br.com.lopes.estruturas;
+package br.com.lopes.buscas;
 
-import br.com.lopes.grafocidades.Adjacente;
-import br.com.lopes.grafocidades.Cidade;
-import br.com.lopes.grafocidades.Mapa;
+import br.com.lopes.estruturas.Pilha;
+import br.com.lopes.grafo.Adjacente;
+import br.com.lopes.grafo.Cidade;
+import br.com.lopes.grafo.Mapa;
 
 public class Profundidade {
 

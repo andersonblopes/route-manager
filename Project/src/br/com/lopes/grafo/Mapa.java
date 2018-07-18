@@ -1,4 +1,4 @@
-package br.com.lopes.grafocidades;
+package br.com.lopes.grafo;
 
 public class Mapa {
 

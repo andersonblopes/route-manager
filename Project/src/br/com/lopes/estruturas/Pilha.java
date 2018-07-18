@@ -1,7 +1,7 @@
 package br.com.lopes.estruturas;
 
-import br.com.lopes.grafocidades.Cidade;
-import br.com.lopes.grafocidades.Mapa;
+import br.com.lopes.grafo.Cidade;
+import br.com.lopes.grafo.Mapa;
 
 public class Pilha {
 

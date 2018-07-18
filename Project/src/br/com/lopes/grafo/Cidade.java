@@ -1,4 +1,4 @@
-package br.com.lopes.grafocidades;
+package br.com.lopes.grafo;
 
 import java.util.ArrayList;
 import java.util.List;
