@@ -7,11 +7,13 @@ public class Cidade {
 
 	private String nome;
 	private boolean visitado;
+	private int distanciaObjetivo;
 	private List<Adjacente> adjacentes;
 
-	public Cidade(String nome) {
+	public Cidade(String nome, int distanciaObjetivo) {
 		this.nome = nome;
 		visitado = false;
+		this.setDistanciaObjetivo(distanciaObjetivo);
 		adjacentes = new ArrayList<>();
 	}
 
@@ -37,6 +39,14 @@ public class Cidade {
 
 	public List<Adjacente> getAdjacentes() {
 		return adjacentes;
+	}
+
+	public int getDistanciaObjetivo() {
+		return distanciaObjetivo;
+	}
+
+	public void setDistanciaObjetivo(int distanciaObjetivo) {
+		this.distanciaObjetivo = distanciaObjetivo;
 	}
 
 }

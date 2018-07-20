@@ -20,22 +20,22 @@ public class Mapa {
 	private Cidade itaitinga;
 
 	public Mapa() {
-		this.fortaleza = new Cidade("Fortaleza");
-		this.eusebio = new Cidade("Eusebio");
-		this.aquiraz = new Cidade("Aquiraz");
-		this.pindoretama = new Cidade("Pindoretama");
-		this.cascavel = new Cidade("Cascavel");
-		this.beberibe = new Cidade("Beberibe");
-		this.fortim = new Cidade("Fortim");
-		this.aracati = new Cidade("Aracati");
-		this.icapui = new Cidade("Icapui");
-		this.mossoro = new Cidade("Mossoro");
-		this.barauna = new Cidade("Barauna");
-		this.russas = new Cidade("Russas");
-		this.chorozinho = new Cidade("Chorozinho");
-		this.pacajus = new Cidade("Pacajus");
-		this.horizonte = new Cidade("Horizonte");
-		this.itaitinga = new Cidade("Itaitinga");
+		this.fortaleza = new Cidade("Fortaleza", 211); // 260
+		this.eusebio = new Cidade("Eusebio", 190); // 216
+		this.aquiraz = new Cidade("Aquiraz", 183); // 215
+		this.pindoretama = new Cidade("Pindoretama", 167); // 192
+		this.cascavel = new Cidade("Cascavel", 156); // 177
+		this.beberibe = new Cidade("Beberibe", 141); // 160
+		this.fortim = new Cidade("Fortim", 97); // 110
+		this.aracati = new Cidade("Aracati", 84); // 91
+		this.icapui = new Cidade("Icapui", 56); // 66
+		this.mossoro = new Cidade("Mossoro", 0);
+		this.barauna = new Cidade("Barauna", 33); // 35
+		this.russas = new Cidade("Russas", 76); // 88
+		this.chorozinho = new Cidade("Chorozinho", 161); // 182
+		this.pacajus = new Cidade("Pacajus", 168); // 204
+		this.horizonte = new Cidade("Horizonte", 175); // 214
+		this.itaitinga = new Cidade("Itaitinga", 189); // 230
 
 		this.fortaleza.addCidadeAdjacente(new Adjacente(eusebio));
 		this.fortaleza.addCidadeAdjacente(new Adjacente(itaitinga));
