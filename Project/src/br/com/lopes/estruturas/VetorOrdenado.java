@@ -13,6 +13,10 @@ public class VetorOrdenado {
 		this.numeroElementos = 0;
 	}
 
+	public Cidade getPrimeiro() {
+		return cidades[0];
+	}
+
 	public void inserir(Cidade cidade) {
 		int posicao;
 		for (posicao = 0; posicao < numeroElementos; posicao++) {
