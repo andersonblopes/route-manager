@@ -20,6 +20,7 @@ public class Mapa {
 	private Cidade itaitinga;
 
 	public Mapa() {
+
 		this.fortaleza = new Cidade("Fortaleza", 211); // 260
 		this.eusebio = new Cidade("Eusebio", 190); // 216
 		this.aquiraz = new Cidade("Aquiraz", 183); // 215
@@ -37,44 +38,45 @@ public class Mapa {
 		this.horizonte = new Cidade("Horizonte", 175); // 214
 		this.itaitinga = new Cidade("Itaitinga", 189); // 230
 
-		this.fortaleza.addCidadeAdjacente(new Adjacente(eusebio));
-		this.fortaleza.addCidadeAdjacente(new Adjacente(itaitinga));
-		this.eusebio.addCidadeAdjacente(new Adjacente(fortaleza));
-		this.eusebio.addCidadeAdjacente(new Adjacente(aquiraz));
-		this.eusebio.addCidadeAdjacente(new Adjacente(itaitinga));
-		this.itaitinga.addCidadeAdjacente(new Adjacente(fortaleza));
-		this.itaitinga.addCidadeAdjacente(new Adjacente(eusebio));
-		this.itaitinga.addCidadeAdjacente(new Adjacente(horizonte));
-		this.aquiraz.addCidadeAdjacente(new Adjacente(eusebio));
-		this.aquiraz.addCidadeAdjacente(new Adjacente(pindoretama));
-		this.horizonte.addCidadeAdjacente(new Adjacente(itaitinga));
-		this.horizonte.addCidadeAdjacente(new Adjacente(pacajus));
-		this.pindoretama.addCidadeAdjacente(new Adjacente(aquiraz));
-		this.pindoretama.addCidadeAdjacente(new Adjacente(cascavel));
-		this.pacajus.addCidadeAdjacente(new Adjacente(horizonte));
-		this.pacajus.addCidadeAdjacente(new Adjacente(chorozinho));
-		this.pacajus.addCidadeAdjacente(new Adjacente(cascavel));
-		this.cascavel.addCidadeAdjacente(new Adjacente(pindoretama));
-		this.cascavel.addCidadeAdjacente(new Adjacente(beberibe));
-		this.cascavel.addCidadeAdjacente(new Adjacente(pacajus));
-		this.chorozinho.addCidadeAdjacente(new Adjacente(pacajus));
-		this.chorozinho.addCidadeAdjacente(new Adjacente(russas));
-		this.beberibe.addCidadeAdjacente(new Adjacente(cascavel));
-		this.beberibe.addCidadeAdjacente(new Adjacente(fortim));
-		this.russas.addCidadeAdjacente(new Adjacente(chorozinho));
-		this.russas.addCidadeAdjacente(new Adjacente(aracati));
-		this.russas.addCidadeAdjacente(new Adjacente(barauna));
-		this.fortim.addCidadeAdjacente(new Adjacente(beberibe));
-		this.fortim.addCidadeAdjacente(new Adjacente(aracati));
-		this.aracati.addCidadeAdjacente(new Adjacente(russas));
-		this.aracati.addCidadeAdjacente(new Adjacente(fortim));
-		this.aracati.addCidadeAdjacente(new Adjacente(icapui));
-		this.barauna.addCidadeAdjacente(new Adjacente(russas));
-		this.barauna.addCidadeAdjacente(new Adjacente(mossoro));
-		this.icapui.addCidadeAdjacente(new Adjacente(aracati));
-		this.icapui.addCidadeAdjacente(new Adjacente(mossoro));
-		this.mossoro.addCidadeAdjacente(new Adjacente(icapui));
-		this.mossoro.addCidadeAdjacente(new Adjacente(barauna));
+		this.fortaleza.addCidadeAdjacente(new Adjacente(eusebio, 24));
+		this.fortaleza.addCidadeAdjacente(new Adjacente(itaitinga, 33));
+		this.eusebio.addCidadeAdjacente(new Adjacente(fortaleza, 24));
+		this.eusebio.addCidadeAdjacente(new Adjacente(aquiraz, 10));
+		this.eusebio.addCidadeAdjacente(new Adjacente(itaitinga, 22));
+		this.itaitinga.addCidadeAdjacente(new Adjacente(fortaleza, 33));
+		this.itaitinga.addCidadeAdjacente(new Adjacente(eusebio, 22));
+		this.itaitinga.addCidadeAdjacente(new Adjacente(horizonte, 21));
+		this.aquiraz.addCidadeAdjacente(new Adjacente(eusebio, 10));
+		this.aquiraz.addCidadeAdjacente(new Adjacente(pindoretama, 26));
+		this.horizonte.addCidadeAdjacente(new Adjacente(itaitinga, 21));
+		this.horizonte.addCidadeAdjacente(new Adjacente(pacajus, 10));
+		this.pindoretama.addCidadeAdjacente(new Adjacente(aquiraz, 26));
+		this.pindoretama.addCidadeAdjacente(new Adjacente(cascavel, 15));
+		this.pacajus.addCidadeAdjacente(new Adjacente(horizonte, 10));
+		this.pacajus.addCidadeAdjacente(new Adjacente(chorozinho, 15));
+		this.pacajus.addCidadeAdjacente(new Adjacente(cascavel, 28));
+		this.cascavel.addCidadeAdjacente(new Adjacente(pindoretama, 15));
+		this.cascavel.addCidadeAdjacente(new Adjacente(beberibe, 24));
+		this.cascavel.addCidadeAdjacente(new Adjacente(pacajus, 28));
+		this.chorozinho.addCidadeAdjacente(new Adjacente(pacajus, 15));
+		this.chorozinho.addCidadeAdjacente(new Adjacente(russas, 99));
+		this.beberibe.addCidadeAdjacente(new Adjacente(cascavel, 24));
+		this.beberibe.addCidadeAdjacente(new Adjacente(fortim, 54));
+		this.russas.addCidadeAdjacente(new Adjacente(chorozinho, 99));
+		this.russas.addCidadeAdjacente(new Adjacente(aracati, 72));
+		this.russas.addCidadeAdjacente(new Adjacente(barauna, 52));
+		this.fortim.addCidadeAdjacente(new Adjacente(beberibe, 54));
+		this.fortim.addCidadeAdjacente(new Adjacente(aracati, 18));
+		this.aracati.addCidadeAdjacente(new Adjacente(russas, 72));
+		this.aracati.addCidadeAdjacente(new Adjacente(fortim, 18));
+		this.aracati.addCidadeAdjacente(new Adjacente(icapui, 51));
+		this.barauna.addCidadeAdjacente(new Adjacente(russas, 52));
+		this.barauna.addCidadeAdjacente(new Adjacente(mossoro, 35));
+		this.icapui.addCidadeAdjacente(new Adjacente(aracati, 51));
+		this.icapui.addCidadeAdjacente(new Adjacente(mossoro, 66));
+		this.mossoro.addCidadeAdjacente(new Adjacente(icapui, 66));
+		this.mossoro.addCidadeAdjacente(new Adjacente(barauna, 35));
+
 	}
 
 	public Cidade getFortaleza() {
